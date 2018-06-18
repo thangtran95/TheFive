@@ -33,7 +33,6 @@ header .navbar-inverse {
         padding: 0;
         text-transform: lowercase;
         color: #888;
-        -webkit-transition: color .24s ease-out;
         transition: color .24s ease-out; }
         header .navbar-inverse .navbar-collapse .navbar-nav li a:hover {
           color: #111; }
@@ -70,7 +69,6 @@ header .navbar-inverse {
     background: transparent;
     border: 0;
     outline: 0;
-    -webkit-transition: all .5s ease;
     transition: all .5s ease; }
     .menu-scroll .ed-btn-filler.active {
       color: #111; }
@@ -86,8 +84,7 @@ article {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     font-family: Arial;
     font-weight: 700;
     font-style: normal;
@@ -135,7 +132,6 @@ article {
   color: #fff;
   background: #111;
   border: 0;
-  -webkit-transition: all .5s ease;
   transition: all .5s ease;
   text-transform: uppercase;
   font-size: 16px; }
@@ -166,16 +162,24 @@ article {
     text-decoration: underline; }
 
 .custome-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  flex-wrap: wrap; }
+
+.title-cate {
+  margin-bottom: 30px;
+  border-bottom: 4px solid; }
+  .title-cate h4 {
+    font-weight: bold;
+    font-size: 20px;
+    background: #333;
+    color: #fff;
+    padding: 10px;
+    display: inline-block;
+    margin: 0; }
 
 .box-news {
   margin-bottom: 40px; }
   .box-news a img {
-    -webkit-transition: all .3s ease;
     transition: all .3s ease; }
   .box-news h5 {
     color: #111;
@@ -202,7 +206,6 @@ article {
     margin: 0 4px;
     color: #111;
     border: 1px solid;
-    -webkit-transition: all .5s ease;
     transition: all .5s ease; }
   .phantrang ul li.active a, .phantrang ul li.active span, .phantrang ul li:hover a, .phantrang ul li:hover span {
     background: #111 !important;
@@ -230,7 +233,6 @@ article {
     font-size: 18px; }
     .adwards-page .infor-adwards h5 a {
       color: #111;
-      -webkit-transition: all .5s ease;
       transition: all .5s ease; }
       .adwards-page .infor-adwards h5 a:hover {
         text-decoration: underline; }
@@ -264,7 +266,6 @@ footer {
       padding: 20px;
       background: rgba(0, 0, 0, 0.5);
       opacity: 0;
-      -webkit-transition: opacity .5s ease;
       transition: opacity .5s ease; }
       .project-page .box-project a h3 {
         color: #fff;
@@ -336,8 +337,7 @@ footer {
         height: 100%; }
         .regular3 .draggable .slick-track .slick-slide img {
           height: 100%;
-          -o-object-fit: cover;
-             object-fit: cover; }
+          object-fit: cover; }
   .regular3 .slick-slide {
     margin: 0; }
   .regular3 .slick-dots {
@@ -352,7 +352,6 @@ footer {
         width: 26px;
         height: 5px;
         padding: 0px;
-        -webkit-transition: all .5s ease;
         transition: all .5s ease; }
       .regular3 .slick-dots li.slick-active button {
         background: #fff; }
@@ -397,50 +396,34 @@ footer {
         display: inline-block;
         float: none;
         z-index: 1000;
-        -webkit-transition: -webkit-transform .5s ease;
-        transition: -webkit-transform .5s ease;
         transition: transform .5s ease;
-        transition: transform .5s ease, -webkit-transform .5s ease;
-        -webkit-transform: scale(1);
-                transform: scale(1); }
+        transform: scale(1); }
         .navbar-inverse .ed-toggle-right .navbar-toggle span {
           background: #111; }
         .navbar-inverse .ed-toggle-right .navbar-toggle .icon-bar {
           width: 22px;
-          -webkit-transition: all 0.2s;
           transition: all 0.2s; }
         .navbar-inverse .ed-toggle-right .navbar-toggle .top-bar {
-          -webkit-transform: rotate(0);
-                  transform: rotate(0); }
+          transform: rotate(0); }
         .navbar-inverse .ed-toggle-right .navbar-toggle .middle-bar {
           opacity: 1; }
         .navbar-inverse .ed-toggle-right .navbar-toggle .bottom-bar {
-          -webkit-transform: rotate(0);
-                  transform: rotate(0); }
+          transform: rotate(0); }
         .navbar-inverse .ed-toggle-right .navbar-toggle.active {
-          -webkit-transform: scale(1.2);
-                  transform: scale(1.2); }
+          transform: scale(1.2); }
           .navbar-inverse .ed-toggle-right .navbar-toggle.active .top-bar {
-            -webkit-transform: rotate(45deg);
-                    transform: rotate(45deg);
-            -webkit-transform-origin: 10% 10%;
-                    transform-origin: 10% 10%; }
+            transform: rotate(45deg);
+            transform-origin: 10% 10%; }
           .navbar-inverse .ed-toggle-right .navbar-toggle.active .middle-bar {
             opacity: 0; }
           .navbar-inverse .ed-toggle-right .navbar-toggle.active .bottom-bar {
-            -webkit-transform: rotate(-45deg);
-                    transform: rotate(-45deg);
-            -webkit-transform-origin: 10% 90%;
-                    transform-origin: 10% 90%; }
+            transform: rotate(-45deg);
+            transform-origin: 10% 90%; }
     .navbar-inverse .navbar-collapse {
       max-height: unset;
       position: fixed;
-      -webkit-transition: -webkit-transform .5s ease;
-      transition: -webkit-transform .5s ease;
       transition: transform .5s ease;
-      transition: transform .5s ease, -webkit-transform .5s ease;
-      -webkit-transform: scale(0);
-              transform: scale(0);
+      transform: scale(0);
       top: 0;
       left: 0;
       right: 0;
@@ -456,8 +439,7 @@ footer {
           display: block !important;
           padding: 15px; }
       .navbar-inverse .navbar-collapse.navbar-inverse-open {
-        -webkit-transform: scale(1);
-                transform: scale(1); } }
+        transform: scale(1); } }
 .dropup {
   z-index: 9999;
   position: fixed;
@@ -467,7 +449,6 @@ footer {
     background-color: rgba(0, 0, 0, 0.68);
     color: #fff;
     border: 0;
-    -webkit-transition: all .5s ease;
     transition: all .5s ease;
     border-radius: 0; }
     .dropup button:hover {
@@ -482,7 +463,6 @@ footer {
       background-color: transparent;
       color: #fff;
       padding: 7px 20px;
-      -webkit-transition: all .3s ease;
       transition: all .3s ease; }
       .dropup .dropdown-menu li a:hover {
         background-color: rgba(0, 0, 0, 0.88); }
@@ -494,4 +474,5 @@ footer {
     background-color: rgba(255, 255, 255, 0.15); }
     .dropup.dropup-indext .dropdown-menu li a:hover {
       background-color: rgba(255, 255, 255, 0.25); }
+
 /*# sourceMappingURL=main.css.map */
