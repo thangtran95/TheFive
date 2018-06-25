@@ -47,6 +47,12 @@
     .dropup-indext{
         bottom: 80px;
     }
+    footer {
+        padding: 0px 0 80px;
+    }
+    footer .ed-footer .report li:first-child{
+        border: 0;
+    }
 }
 
 @media only screen and (max-width: 375px) {

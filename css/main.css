@@ -242,15 +242,31 @@ footer {
   padding: 50px 0; }
   footer .ed-footer {
     text-align: center; }
-    footer .ed-footer ul {
+    footer .ed-footer .ft-social {
       margin: 30px 0; }
-      footer .ed-footer ul li {
+      footer .ed-footer .ft-social li {
         display: inline-block;
         margin: 0 5px; }
-        footer .ed-footer ul li a {
+        footer .ed-footer .ft-social li a {
           color: #111; }
-          footer .ed-footer ul li a i {
+          footer .ed-footer .ft-social li a i {
             font-size: 25px; }
+    footer .ed-footer .report {
+      text-align: center; }
+      footer .ed-footer .report li {
+        font-size: 16px;
+        color: #333;
+        display: inline-block;
+        margin-right: 20px; }
+        footer .ed-footer .report li:first-child {
+          padding-right: 20px;
+          border-right: 1px solid #d4d4d4; }
+        footer .ed-footer .report li i {
+          font-size: 18px;
+          margin-right: 5px;
+          color: #999999; }
+        footer .ed-footer .report li span {
+          font-weight: bold; }
 
 .project-page {
   padding: 50px 0; }

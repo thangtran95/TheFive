@@ -348,7 +348,7 @@ footer{
 	padding: 50px 0;
 	.ed-footer{
 		text-align: center;
-		ul{
+		.ft-social{
 			margin: 30px 0;
 			li{
 				display: inline-block;
@@ -359,6 +359,27 @@ footer{
 						font-size: 25px;
 					}
 
+				}
+			}
+		}
+		.report{
+			text-align: center;
+			li{
+				font-size: 16px;
+				color: #333;
+				display: inline-block;
+				margin-right: 20px;
+				&:first-child{
+					padding-right: 20px;
+					border-right: 1px solid #d4d4d4;
+				}
+				i{
+					font-size: 18px;
+					margin-right: 5px;
+					color: #999999;
+				}
+				span{
+					font-weight: bold;
 				}
 			}
 		}
